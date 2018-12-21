@@ -262,12 +262,12 @@ models.sequelize.sync().then(function() {
    * 
    * Listen only when database connection is sucessfull
    */
-  app.listen process.env.PORT, function() {
+  app.listen(process.env.PORT, function() {
     console.log('Express server listening on port' + process.env.PORT);
   });
 });
 
-//Api Rest
+//Api Res
 //Avoir liste des singes
 app.get('/rest/monkeys', function (req, res) {
     
