@@ -1,0 +1,25 @@
+extends layout.pug
+
+block header
+
+
+block content
+    h2 Signup
+
+    - var url = '/signup' 
+    form(method='post' action=url id='signup' name='signup' style='margin-left:10px;margin-right:70%;')
+        div.form-group
+            label(for='email') Email:
+            input#email.form-control(type="email", placeholder="Saissisez votre email" name='email')
+        div.form-group
+            label(for='firstname') firstname:
+            input#firstname.form-control(type="text", placeholder="Saissisez votre firstname" name='firstname')
+        div.form-group
+            label(for='lastname') lastname:
+            input#lastname.form-control(type="text", placeholder="Saissisez votre lastname" name='lastname')
+        div.form-group
+            label(for='password') password:
+            input#password.form-control(type="password", placeholder="Saissisez votre password" name='password')
+        button.btn.btn-success(type='submit') Valider
+
+        a.btn.btn-primary(href='/signin', style='margin-left:10px' ) Sign in

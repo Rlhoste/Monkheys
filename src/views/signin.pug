@@ -1,0 +1,18 @@
+extends layout.pug
+
+block header
+
+
+block content
+    h2 Signin
+    - var url = '/signin' 
+    form(method='post' action=url id='signin' name='signin' style='margin-left:10px;margin-right:70%;' )
+        div.form-group
+            label(for='email') Email:
+            input#email.form-control(type="email", placeholder="Saissisez votre email" name='email')
+        div.form-group
+            label(for='password') password:
+            input#password.form-control(type="password", placeholder="Saissisez votre password" name='password')
+        button.btn.btn-success(type='submit') Valider
+
+        a.btn.btn-primary(href='/signup', style='margin-left:10px' ) Sign up

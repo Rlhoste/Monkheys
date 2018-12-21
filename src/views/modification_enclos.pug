@@ -1,0 +1,17 @@
+extends layout.pug
+
+block header
+     a.btn.btn-primary(href='/monkeys', style='margin-left:10px; margin-top:10px') Revenir au menu
+
+block content
+    h2 Modifier un enclos
+
+    - var url = '/enclos/update/' + id
+    form(method='POST' action=url style='margin-left:10px;margin-right:70%;')
+        div.form-group
+            label(for='nom') Nom:
+            input#nom.form-control(type="text", placeholder="Nom de l'enclos" name='nom')
+        div.form-group
+            label(for='capacity') Capacite:
+            input#capacity.form-control(type="number", placeholder="Capacite de l'enclos" name='capacity')
+        button.btn.btn-success(type='submit') Valider

@@ -1,0 +1,20 @@
+extends layout.pug
+
+block header
+     a.btn.btn-primary(href='/monkeys', style='margin-left:10px; margin-top:10px') Revenir au menu
+
+block content
+    h2 Mettre a jour un singe
+    #{id}
+    - var url = '/monkeys/update/' + id
+    form(method='POST' action=url style='margin-left:10px;margin-right:70%;')
+        div.form-group
+            label(for='name') Nom:
+            input#name.form-control(type='text', placeholder='nom du singe' name='name')
+        div.form-group
+            label(for='num') Numero:
+            input#num.form-control(type='number', placeholder='numero du singe' name='num')
+        div.form-group
+            label(for='color') Color:
+            input#color.form-control(type='text', placeholder='couleur du singe' name='color')
+        button.btn.btn-success(type='submit') Valider

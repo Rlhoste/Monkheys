@@ -1,0 +1,63 @@
+extends layout.pug	
+block content
+    h1= title   
+    .col-md-6
+        h1.display-1  Monkhey
+        
+        -var enclosnb = enclos.length
+        -var monkeysnb = monkeys.length
+        p.lead Il y a #{monkeysnb} singes et #{enclosnb} enclos
+        
+        table.table.table-dark
+            thead
+                tr
+                    th Singes
+                    th Nombre
+                    th Couleur
+                    th modifier singe
+                    th Lier un singe a un enclos
+                    th supprimer singe
+            tbody
+            each monkey in monkeys 
+                tr
+                    td 
+                       - var url = '/monkeys/' + monkey.id
+                       a(href=url) #{monkey.name}
+                    td #{monkey.num}
+                    td #{monkey.color}
+                    td 
+                       - var url1 = '/modification_singe/' + monkey.id
+                       a.btn.btn-primary(href=url1, role='button') modifier 
+                    td 
+                       - var url6 = '/lier_singe/' + monkey.id
+                       a.btn.btn-primary(href=url6, role='button') Lier ce singe
+                    td
+                       - var url2 = '/monkeys/destroy/' + monkey.id
+                       a.btn.btn-danger(href=url2, role='button') X 
+        a.btn.btn-success(href='/createMonkey/', role='button') Cree un singe
+        p 
+        table.table.table-dark
+           thead
+                tr
+                    th Enclos
+                    th Capacite
+                    th modifier enclos 
+                    th supprimer singe
+
+           tbody
+           each enclo in enclos 
+               tr
+                    td 
+                       - var url5 = '/enclos/' + enclo.id
+                       a(href=url5) #{enclo.nom}
+                    td #{enclo.capacity}
+                    td 
+                       - var url3 = '/modification_enclos/' + enclo.id
+                       a.btn.btn-primary(href=url3, role='button') modifier 
+                    td
+                       - var url4 = '/enclos/destroy/' + enclo.id
+                       a.btn.btn-danger(href=url4, role='button') X 
+        
+        
+        a.btn.btn-success(href='/createEnclos/', role='button') Cree un enclos
+        a.btn.btn-danger(href='/logout/', role='button',style='margin-left:10px;') Logout
