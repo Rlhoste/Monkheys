@@ -4,7 +4,7 @@ module.exports = {
     username: 'process.env.MYSQL_ADDON_USER',
     password: 'process.env.MYSQL_ADDON_PASSWORD',
     options: {
-        host: '3306',
+        host: 'process.env.MYSQL_ADDON_HOST',
         dialect: 'mysql'
     }
 }
