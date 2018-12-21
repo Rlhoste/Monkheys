@@ -1,45 +1,45 @@
-//{
+{
 
-//  "development": {
+  "development": {
 
-//    "username": "root",
+    "username": "process.env.MYSQL_ADDON_USER",
 
-//    "password": "",
+    "password": "process.env.MYSQL_ADDON_PASSWORD",
 
-//    "database": "monkey",
+    "database": "process.env.MYSQL_ADDON_DB",
 
-//    "host": "localhost",
+    "host": "process.env.MYSQL_ADDON_HOST",
 
-//    "dialect": "mysql"
+    "dialect": "mysql"
 
-//  },
+  },
 
-//  "test": {
+  "test": {
 
-//    "username": "",
+    "username": "",
 
-//    "password": null,
+    "password": null,
 
-//    "database": "",
+    "database": "",
 
-//    "host": "",
+    "host": "",
 
-//    "dialect": "mysql"
+    "dialect": "mysql"
 
-//  },
+  },
 
-//  "production": {
+  "production": {
 
-//    "username": "",
+    "username": "",
 
-//    "password": null,
+    "password": null,
 
-//    "database": "",
+    "database": "",
 
-//    "host": "localhost",
+    "host": "process.env.MYSQL_ADDON_HOST",
 
-//    "dialect": "mysql"
+    "dialect": "mysql"
 
-//  }
+  }
 
-//}
+}
