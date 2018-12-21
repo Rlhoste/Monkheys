@@ -2,13 +2,13 @@
 
   "development": {
 
-    "username": "process.env.MYSQL_ADDON_USER",
+    "username": "root",
 
     "password": "",
 
-    "database": "process.env.MYSQL_ADDON_DB",
+    "database": "monkey",
 
-    "host": "process.env.MYSQL_ADDON_HOST",
+    "host": "localhost",
 
     "dialect": "mysql"
 
@@ -36,7 +36,7 @@
 
     "database": "",
 
-    "host": "process.env.MYSQL_ADDON_HOST",
+    "host": "localhost",
 
     "dialect": "mysql"
 
