@@ -1,4 +1,3 @@
-const mysql = require('mysql');
 module.exports = {
     database: 'process.env.MYSQL_ADDON_DB',
     username: 'process.env.MYSQL_ADDON_USER',
