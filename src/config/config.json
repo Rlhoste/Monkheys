@@ -1,45 +1,45 @@
-{
+//{
 
-  "development": {
+//  "development": {
 
-    "username": "root",
+//    "username": "root",
 
-    "password": "",
+//    "password": "",
 
-    "database": "monkey",
+//    "database": "monkey",
 
-    "host": "localhost",
+//    "host": "localhost",
 
-    "dialect": "mysql"
+//    "dialect": "mysql"
 
-  },
+//  },
 
-  "test": {
+//  "test": {
 
-    "username": "",
+//    "username": "",
 
-    "password": null,
+//    "password": null,
 
-    "database": "",
+//    "database": "",
 
-    "host": "",
+//    "host": "",
 
-    "dialect": "mysql"
+//    "dialect": "mysql"
 
-  },
+//  },
 
-  "production": {
+//  "production": {
 
-    "username": "",
+//    "username": "",
 
-    "password": null,
+//    "password": null,
 
-    "database": "",
+//    "database": "",
 
-    "host": "localhost",
+//    "host": "localhost",
 
-    "dialect": "mysql"
+//    "dialect": "mysql"
 
-  }
+//  }
 
-}
+//}
